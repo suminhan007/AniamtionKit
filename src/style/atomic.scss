@@ -329,7 +329,9 @@
 .border {
     border: 1px solid #EDEFF2;
 }
-
+.border-primary{
+    border: 1px solid#0AA344;
+}
 .border-dash {
     border: 1px dashed #EDEFF2;
 }
@@ -404,6 +406,9 @@
 .color-white {
     color: white;
 }
+.color-primary{
+    color: #0AA344;
+}
 .ellipsis {
     text-overflow: ellipsis;
     overflow: hidden;
@@ -416,6 +421,12 @@
 }
 .bg-gray{
     background-color: rgba(0,0,0,0.02);
+}
+.bg-primary {
+    background-color: #0AA344;
+}
+.bg-primary-lighter {
+    background-color: rgba(10, 163, 68, .4);
 }
 .hover-bg-gray {
     &:hover {
