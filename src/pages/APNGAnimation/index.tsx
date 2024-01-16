@@ -1,4 +1,5 @@
 import React, { useRef, useState } from 'react'
+import { StyleWrap } from '../Home'
 import parseAPNG from 'apng-js'
 import styled from 'styled-components'
 import Uploader from '../../components/Uploader'
@@ -69,7 +70,7 @@ const APNGAnimation: React.FC<Props> = ({
         }, 1000);
     }
     return (
-        <StyleApngContainer className='StyleApngContainer flex column items-center gap-24'>
+        <StyleWrap className='StyleWrap flex column items-center gap-24'>
             {/* <video preload="auto" muted loop autoPlay disablePictureInPicture x-webkit-airplay="deny" width='100%' poster="/src/assets/">
                 <source src={wemb6} type="video/webm" />
             </video> */}
@@ -112,14 +113,10 @@ const APNGAnimation: React.FC<Props> = ({
                 <canvas ref={apngCanvasRef} width={480} height={400}/>
             </div>
             <Toast text={toastText} show={toast}/>
-        </StyleApngContainer>
+        </StyleWrap>
     )
 }
-const StyleApngContainer = styled.div`
-    width: calc(100% - 32px);
-    max-width: 960px;
-    margin: 0 auto;
-`
+
 const StyleUploaderWrap = styled.div`
     height: 200px;
 `

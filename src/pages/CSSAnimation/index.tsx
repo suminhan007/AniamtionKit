@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
+import { StyleWrap } from '../Home'
 
 import { IconLeftArrow } from '../../components/Icon'
 import MainTitle from '../../components/MainTitle'
@@ -136,13 +137,6 @@ const CSSAnimation: React.FC<Props> = ({
         </StyleWrap>
     )
 }
-
-const StyleWrap = styled.div`
-    width: calc(100% - 48px);
-    height: 100vh;
-    border-radius: 8px;
-    margin: 0 auto;
-`
 
 const StyleElementItem = styled.div`
     text-align: center;
